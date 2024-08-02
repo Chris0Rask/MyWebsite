@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Slab", "Poppins";
+    --textcolor: #ceb89b;
+    --bgcolor:#8a6e62;
+
+}
+
+
+body{
+    min-height: 100vh;
+    background-color:var(--bgcolor);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    background: #8a6e62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #ceb89b;
+}
+
+.logoimg{
+    float: left;
+    width: 30%;
+    height: 30%;
+}
+
+.logo {
+    float: left;
+    font-size: 32px;
+    color:var(--textcolor);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.navbar a {
+    position: relative;
+    font: size 18px;
+    color: #ceb89b;;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+width: 0;
+height: 2px;
+background-color: #ceb89b;;
+transition: .3s;
+}
+
+.navbar a:hover::before {
+ width: 100%;
+}
+
+.midtext{
+    color: var(--textcolor);
+    margin-left: 100px;
+    margin-top: 160px;
+    font-size: 100px;
+    display:inline-block
+}
+
+h2{
+    color: var(--textcolor);
+    margin-left: 100px;
+    margin-top: 180px;
+    font-size: 28px;
+}
+
+
+.CocktailList{
+ width: 200px;
+background: linear-gradient(to left,#8a6e62, #ceb89b);
+margin-top: 15%;
+margin-left: 5%;
+}
+
+
+.describe{
+    font-size: 24px;
+    display:inline-block;
+    margin-left: 7.5%;
+    margin-top: 2%;
+    color: var(--textcolor);
+}
+
+
+.btn2{
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 42%;
+    position: relative;
+    background:var(--textcolor);
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.btn2:hover{
+    background: var(--textcolor);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--textcolor);
+
+}
+.btn2::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--bgcolor);
+}
+
+.btn2 span{
+    color: var(--textcolor);
+    position: relative;
+    z-index: 1;
+}
+
+.btn2 i{
+    position: absolute;
+    inset: 0;
+    display: block;
+
+}
+.btn2 i::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: var(--bgcolor);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.btn2:hover i::before{
+    width: 20px;
+    left: 20%;
+}
+
+.btn2 i::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: var(--bgcolor);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.btn2:hover i::after{
+    width: 20px;
+    left: 80%;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    font-size: 0.9em;
+    min-width: 650px;   
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--textcolor);
+}
+
+.content-table thead tr{
+    background-color: var(--bgcolor);
+    color: bisque;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.content-table th{
+    padding: 12px 15px;
+}
+
+.content-table td{
+    color: var(--bgcolor);
+    padding: 12px 15px;
+    font-weight: 800;
+}
+
+.content-table tbody tr{
+    border-bottom: 1.5px solid var(--bgcolor);
+    background-color: var(--textcolor);
+    color: #8a6e62;
+
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 15px solid var(--bgcolor);
+}
+.page-name{
+    color: var(--textcolor);
+    margin-left: 130px;
+    margin-top: 100px;
+    font-size: 50px;
+    display:inline-block
+}
